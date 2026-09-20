@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刺挠-解痒止痒神器与皮肤护理指南</title>
+    <meta name="description" content="刺挠网提供全方位的止痒解决方案、皮肤护理知识及常见瘙痒症状解析，助您快速缓解不适，找回舒适生活。">
+    <meta name="keywords" content="刺挠, 止痒, 皮肤护理, 蚊虫叮咬, 瘙痒缓解">
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --primary-hover: #fa5252;
+            --secondary-color: #4ecdc4;
+            --text-main: #2d3436;
+            --text-light: #636e72;
+            --bg-body: #f7f9fc;
+            --bg-card: #ffffff;
+            --spacing-unit: 1rem;
+            --border-radius: 12px;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+            --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-card);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .cta-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
+            padding: 4rem 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            border: 2px solid #e1e4e8;
+            border-radius: 50px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-box input:focus {
+            border-color: var(--primary-color);
+        }
+
+        .search-box button {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 0 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .search-box button:hover {
+            background-color: #3dbdb4;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: 2.5fr 1fr;
+            gap: 2.5rem;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 4rem;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 24px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .see-all {
+            color: var(--secondary-color);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        /* Symptom Cards */
+        .symptom-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #fff0f0;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .card-link::after {
+            content: '→';
+            margin-left: 4px;
+            transition: transform 0.2s;
+        }
+
+        .card-link:hover::after {
+            transform: translateX(4px);
+        }
+
+        /* Solutions List */
+        .solution-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .solution-item {
+            background-color: var(--bg-card);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .solution-number {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: rgba(255, 107, 107, 0.2);
+            line-height: 1;
+        }
+
+        .solution-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .solution-info p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Sidebar */
+        aside {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .sidebar-card {
+            background-color: var(--bg-card);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background-color: #f1f3f5;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            transition: all 0.2s;
+        }
+
+        .tag:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.2rem;
+            color: var(--text-light);
+        }
+
+        .faq-answer {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            display: none;
+            padding-top: 0.5rem;
+            border-top: 1px dashed #eee;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        /* Tips Section */
+        .tips-section {
+            background-color: white;
+            padding: 3rem 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .tips-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .tip-box {
+            text-align: center;
+        }
+
+        .tip-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2d3436;
+            color: #dfe6e9;
+            padding: 4rem 1.5rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul li a {
+            color: #b2bec3;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #636e72;
+            color: #636e72;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                height: auto;
+                padding: 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            aside {
+                position: static;
+                order: -1;
+            }
+
+            .search-box {
+                flex-direction: column;
+            }
+
+            .search-box button {
+                padding: 0.8rem;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <a href="#" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            <span>刺挠</span>指南
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#symptoms">常见症状</a></li>
+                <li><a href="#solutions">止痒方案</a></li>
+                <li><a href="#prevention">预防护理</a></li>
+                <li><a href="#faq">常见问答</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="cta-btn">快速自查</a>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>拒绝皮肤<span>刺挠</span>，找回清爽舒适</h1>
+            <p>无论是蚊虫叮咬、干燥起皮还是过敏反应，我们提供科学、安全的止痒护理知识与实用方案。</p>
+            <div class="search-box">
+                <input type="text" placeholder="输入症状或部位，如：手臂、蚊虫、湿疹...">
+                <button type="button">搜索</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Main Content -->
+        <div class="content-area">
+            
+            <!-- Common Symptoms -->
+            <section id="symptoms">
+                <div class="section-header">
+                    <h2 class="section-title">常见刺挠原因</h2>
+                    <a href="#" class="see-all">查看更多</a>
+                </div>
+                <div class="symptom-grid">
+                    <article class="card">
+                        <div>
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>
+                            </div>
+                            <h3>蚊虫叮咬</h3>
+                            <p>夏季最常见的瘙痒来源。蚊虫唾液中的蛋白质会引起强烈的免疫反应，导致红肿和剧烈瘙痒。</p>
+                        </div>
+                        <a href="#" class="card-link">查看止痒药膏</a>
+                    </article>
+
+                    <article class="card">
+                        <div>
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.74 5.88-5.74 5.88-5.74-5.88z"/><path d="M2 12h20"/><path d="M12 22v-8"/></svg>
+                            </div>
+                            <h3>皮肤干燥</h3>
+                            <p>秋冬季节或频繁洗澡后，皮脂膜受损，皮肤屏障功能下降，产生紧绷感和细小刺痒。</p>
+                        </div>
+                        <a href="#" class="card-link">查看润肤乳</a>
+                    </article>
+
+                    <article class="card">
+                        <div>
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31"/><path d="M14 2v7.31"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/></svg>
+                            </div>
+                            <h3>荨麻疹</h3>
+                            <p>过敏引起的急性皮肤反应。表现为风团、红斑，伴有明显的瘙痒和灼热感，需及时就医。</p>
+                        </div>
+                        <a href="#" class="card-link">了解缓解方法</a>
+                    </article>
+
+                    <article class="card">
+                        <div>
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                            </div>
+                            <h3>接触性皮炎</h3>
+                            <p>皮肤接触到刺激性物质（如洗涤剂、金属、花粉）后发生的炎症，常伴有红肿和刺痒。</p>
+                        </div>
+                        <a href="#" class="card-link">查看成分排查</a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Practical Solutions -->
+            <section id="solutions">
+                <div class="section-header">
+                    <h2 class="section-title">科学止痒方案</h2>
+                </div>
+                <div class="solution-list">
+                    <div class="solution-item">
+                        <div class="solution-number">01</div>
+                        <div class="solution-info">
+                            <h4>冷敷降温</h4>
+                            <p>使用冰袋或冷水浸湿的毛巾敷在患处，可收缩血管，减轻肿胀，并麻痹神经末梢缓解瘙痒。</p>
+                        </div>
+                    </div>
+                    <div class="solution-item">
+                        <div class="solution-number">02</div>
+                        <div class="solution-info">
+                            <h4>温和清洁</h4>
+                            <p>避免使用过热的水和碱性强的肥皂。选择温和、无香精的沐浴露，减少对皮肤的进一步刺激。</p>
+                        </div>
+                    </div>
+                    <div class="solution-item">
+                        <div class="solution-number">03</div>
+                        <div class="solution-info">
+                            <h4>外用药物</h4>
+                            <p>根据病因选择合适的药膏。抗组胺药膏适用于过敏，炉甘石洗剂适用于蚊虫叮咬引起的红肿。</p>
+                        </div>
+                    </div>
+                    <div class="solution-item">
+                        <div class="solution-number">04</div>
+                        <div class="solution-info">
+                            <h4>避免抓挠</h4>
+                            <p>抓挠会破坏皮肤屏障，导致感染。如果实在难以忍受，可以轻轻拍打或使用止痒喷雾。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside>
+            <div class="sidebar-card">
+                <h3>热门标签</h3>
+                <div class="tag-cloud">
+                    <a href="#" class="tag">蚊虫叮咬</a>
+                    <a href="#" class="tag">止痒药膏</a>
+                    <a href="#" class="tag">湿疹护理</a>
+                    <a href="#" class="tag">炉甘石</a>
+                    <a href="#" class="tag">止痒喷雾</a>
+                    <a href="#" class="tag">皮肤屏障</a>
+                    <a href="#" class="tag">过敏源</a>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>常见问题 (FAQ)</h3>
+                <div class="faq-item">
+                    <div class="faq-question">抓破皮了怎么办？</div>
+                    <div class="faq-answer">请立即用生理盐水清洗伤口，涂抹抗生素软膏预防感染，并保持伤口干燥。如果红肿加重，请及时就医。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">可以用酒精消毒止痒吗？</div>
+                    <div class="faq-answer">不建议。酒精具有刺激性，会加重刺痛感和皮肤干燥。建议使用碘伏或温和的生理盐水。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">为什么越抓越痒？</div>
+                    <div class="faq-answer">抓挠会释放更多的组胺，并可能损伤皮肤，导致炎症加剧。这是一种恶性循环，应尽量克制。</div>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>健康提示</h3>
+                <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">
+                    本网站内容仅供参考，不能替代专业医生的诊断和治疗。如症状持续不退或伴有全身反应，请务必前往医院就诊。
+                </p>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Prevention & Tips -->
+    <section class="tips-section">
+        <div class="section-header" style="justify-content: center; text-align: center;">
+            <h2 class="section-title">日常预防与护理</h2>
+        </div>
+        <div class="tips-grid">
+            <div class="tip-box">
+                <div class="tip-icon">🌿</div>
+                <h3>环境清洁</h3>
+                <p>定期清理家中死角，保持室内通风干燥，减少尘螨和蟑螂滋生，预防过敏性瘙痒。</p>
+            </div>
+            <div class="tip-box">
+                <div class="tip-icon">🧴</div>
+                <h3>保湿修护</h3>
+                <p>洗澡后3分钟内涂抹身体乳，锁住水分。选择含有神经酰胺成分的护肤品，修复受损屏障。</p>
+            </div>
+            <div class="tip-box">
+                <div class="tip-icon">🧣</div>
+                <h3>衣物选择</h3>
+                <p>贴身衣物应选择纯棉、莫代尔等天然透气材质，避免化纤织物直接接触皮肤引发刺激。</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <h4>关于刺挠指南</h4>
+            <p style="font-size: 0.9rem; line-height: 1.6; color: #b2bec3;">
+                专注于为用户提供科学、实用的皮肤瘙痒护理知识。我们致力于帮助您快速缓解不适，建立健康的皮肤护理习惯。
+            </p>
+        </div>
+        <div class="footer-col">
+            <h4>快速链接</h4>
+            <ul>
+                <li><a href="#symptoms">常见症状</a></li>
+                <li><a href="#solutions">止痒方案</a></li>
+                <li><a href="#prevention">预防护理</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>帮助中心</h4>
+            <ul>
+                <li><a href="#">用户协议</a></li>
+                <li><a href="#">隐私政策</a></li>
+                <li><a href="#">免责声明</a></li>
+                <li><a href="#">联系客服</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 刺挠指南 版权所有 | 本站内容仅供参考，不构成医疗建议</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<script>
+    // FAQ Toggle Logic
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', event => {
+            const parent = item.parentElement;
+            parent.classList.toggle('active');
+        });
+    });
+
+    // Simple Search Interaction
+    const searchBtn = document.querySelector('.search-box button');
+    const searchInput = document.querySelector('.search-box input');
+    
+    searchBtn.addEventListener('click', () => {
+        const query = searchInput.value.trim();
+        if(query) {
+            alert('正在为您搜索关于：' + query + ' 的相关信息...');
+        } else {
+            alert('请输入您遇到的症状或部位');
+        }
+    });
+</script>
+
+</body>
+  </html>
