@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九首歌 - 经典电影资源与艺术赏析</title>
+    <meta name="description" content="九首歌 - 深度解析米克·贾格尔与凯伦·吉兰主演的电影《九首歌》，提供剧情简介、角色分析、影评观点及经典台词回顾。">
+    <meta name="keywords" content="九首歌, 电影, 米克·贾格尔, 凯伦·吉兰, 影评, 经典电影">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #c0392b;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --spacing-unit: 16px;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://picsum.photos/seed/music9/1920/1080.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 20px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 24px;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #a93226;
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px var(--spacing-unit);
+        }
+
+        /* Intro Section */
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .intro-text h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .intro-text p {
+            margin-bottom: 15px;
+            color: var(--text-secondary);
+        }
+
+        .intro-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        /* Song List Section */
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            padding-left: 15px;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .song-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .song-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .song-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .song-cover {
+            height: 160px;
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .song-info {
+            padding: 15px;
+        }
+
+        .song-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .song-info p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Analysis Section */
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .analysis-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .analysis-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .analysis-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+            opacity: 0.7;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            opacity: 0.5;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+            .analysis-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">九首歌</div>
+            <nav class="nav-links">
+                <a href="#intro">影片简介</a>
+                <a href="#songs">收录曲目</a>
+                <a href="#analysis">深度解析</a>
+                <a href="#faq">常见问题</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>九首歌</h1>
+            <p>一段关于摇滚乐、爱情与记忆的纪实影像，感受生活的真实质感。</p>
+            <a href="#intro" class="btn">开始阅读</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- Introduction Section -->
+        <section id="intro">
+            <div class="intro-grid">
+                <div class="intro-text">
+                    <h2>影片简介</h2>
+                    <p>《九首歌》是2004年上映的一部英国爱情剧情片，由迈克尔·温特伯顿执导。影片以极其写实的手法，讲述了澳大利亚学生马特和英国地质学家丽莎从相识、相恋到分分合合的情感历程。</p>
+                    <p>电影的核心叙事并非传统的对白堆砌，而是通过九首贯穿全片的摇滚歌曲，作为时间线索和情感催化剂，将两人在澳洲大陆的旅行、在寒冷英国冬日的相聚、以及生活中的琐碎细节串联起来。影片以不加修饰的镜头语言，展现了亲密关系中的激情、争吵、渴望与最终的无奈。</p>
+                    <p>这部电影以其大胆的裸露镜头和对真实情感的细腻捕捉而闻名，是独立电影史上极具争议与艺术价值的作品之一。</p>
+                </div>
+                <img src="https://picsum.photos/seed/mickjagger/600/400.jpg" alt="电影剧照" class="intro-img">
+            </div>
+        </section>
+
+        <!-- Songs Section -->
+        <section id="songs">
+            <h2 class="section-title">影片中的九首歌</h2>
+            <p style="margin-bottom: 20px; color: var(--text-secondary);">每一首歌都象征着马特和丽莎关系中的一个阶段，记录着他们的欢笑与泪水。</p>
+            <div class="song-list">
+                <article class="song-card">
+                    <div class="song-cover" style="background-image: url('https://picsum.photos/seed/prince/400/300.jpg');"></div>
+                    <div class="song-info">
+                        <h3>当紫雨落下时</h3>
+                        <p>Prince - Purple Rain</p>
+                    </div>
+                </article>
+                <article class="song-card">
+                    <div class="song-cover" style="background-image: url('https://picsum.photos/seed/nielsen/400/300.jpg');"></div>
+                    <div class="song-info">
+                        <h3>爱你的方式</h3>
+                        <p>Nielsen - Love You Forever</p>
+                    </div>
+                </article>
+                <article class="song-card">
+                    <div class="song-cover" style="background-image: url('https://picsum.photos/seed/stooges/400/300.jpg');"></div>
+                    <div class="song-info">
+                        <h3>1970年</h3>
+                        <p>The Stooges - 1970</p>
+                    </div>
+                </article>
+                <article class="song-card">
+                    <div class="song-cover" style="background-image: url('https://picsum.photos/seed/white/400/300.jpg');"></div>
+                    <div class="song-info">
+                        <h3>云雀</h3>
+                        <p>White Stripes - Hotel Yorba</p>
+                    </div>
+                </article>
+                <article class="song-card">
+                    <div class="song-cover" style="background-image: url('https://picsum.photos/seed/keane/400/300.jpg');"></div>
+                    <div class="song-info">
+                        <h3>抱紧我</h3>
+                        <p>Keane - Somewhere Only We Know</p>
+                    </div>
+                </article>
+                <article class="song-card">
+                    <div class="song-cover" style="background-image: url('https://picsum.photos/seed/radiohead/400/300.jpg');"></div>
+                    <div class="song-info">
+                        <h3>福尔摩斯先生</h3>
+                        <p>Radiohead - How to Disappear Completely</p>
+                    </div>
+                </article>
+                <article class="song-card">
+                    <div class="song-cover" style="background-image: url('https://picsum.photos/seed/eagles/400/300.jpg');"></div>
+                    <div class="song-info">
+                        <h3>加州旅馆</h3>
+                        <p>Eagles - Hotel California</p>
+                    </div>
+                </article>
+                <article class="song-card">
+                    <div class="song-cover" style="background-image: url('https://picsum.photos/seed/coldplay/400/300.jpg');"></div>
+                    <div class="song-info">
+                        <h3>白色房间</h3>
+                        <p>Coldplay - The Scientist</p>
+                    </div>
+                </article>
+                <article class="song-card">
+                    <div class="song-cover" style="background-image: url('https://picsum.photos/seed/nirvana/400/300.jpg');"></div>
+                    <div class="song-info">
+                        <h3>所有我们要做的</h3>
+                        <p>Nirvana - All Apologies</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Analysis Section -->
+        <section id="analysis">
+            <h2 class="section-title">影片深度解析</h2>
+            <div class="analysis-grid">
+                <div class="analysis-card">
+                    <span class="analysis-icon">🎵</span>
+                    <h3>音乐作为叙事语言</h3>
+                    <p>导演温特伯顿巧妙地利用摇滚乐作为情感的外化工具。音乐不仅是背景，更是角色心境的写照。从欢快的朋克到悲伤的民谣，音乐节奏的变化直接对应了两人关系的起伏。</p>
+                </div>
+                <div class="analysis-card">
+                    <span class="analysis-icon">❄️</span>
+                    <h3>季节与情感的隐喻</h3>
+                    <p>影片中的两个主要场景分别设定在南半球的盛夏和北半球的严冬。澳洲的阳光代表了激情与自由，而英国的寒冷则象征着现实的冰冷、疏离以及无法逾越的隔阂。</p>
+                </div>
+                <div class="analysis-card">
+                    <span class="analysis-icon">🧊</span>
+                    <h3>亲密关系的本质</h3>
+                    <p>影片摒弃了传统好莱坞式的浪漫滤镜，展示了亲密关系中赤裸、混乱且充满矛盾的一面。它探讨了激情过后，两人在现实生活压力下的磨合与挣扎。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" style="margin-top: 60px;">
+            <h2 class="section-title">常见问题</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <details style="margin-bottom: 15px; background: white; padding: 15px; border-radius: 8px; cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--primary-color);">《九首歌》的主演是谁？</summary>
+                    <p style="margin-top: 10px; color: var(--text-secondary);">男主角由肖恩·比格斯达夫扮演，女主角由凯伦·吉兰扮演。值得一提的是，电影中客串的摇滚巨星包括米克·贾格尔和诺拉·琼斯。</p>
+                </details>
+                <details style="margin-bottom: 15px; background: white; padding: 15px; border-radius: 8px; cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--primary-color);">这部电影适合所有人观看吗？</summary>
+                    <p style="margin-top: 10px; color: var(--text-secondary);">影片包含大量露骨的性爱镜头，且整体基调较为灰暗、写实，主要面向对艺术电影和摇滚文化感兴趣的成年观众。</p>
+                </details>
+                <details style="margin-bottom: 15px; background: white; padding: 15px; border-radius: 8px; cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--primary-color);">为什么选择这九首歌？</summary>
+                    <p style="margin-top: 10px; color: var(--text-secondary);">这些歌曲是导演和编剧共同挑选的，它们代表了两人共同的音乐品味，也是他们情感记忆的锚点。</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">关于我们</a>
+            <a href="#">版权声明</a>
+            <a href="#">联系合作</a>
+        </div>
+        <p class="copyright">&copy; 2023 九首歌电影赏析. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
