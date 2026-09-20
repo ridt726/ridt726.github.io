@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="春暖花开性吧由你-探索情感与两性关系的互动社区。分享生活感悟、情感咨询与私密话题，构建温暖健康的交流空间。">
+    <meta name="keywords" content="春暖花开, 性吧由你, 情感社区, 两性关系, 私密话题, 互动交流">
+    <title>春暖花开性吧由你-情感与两性关系的温暖互动社区</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #ff8c69;
+            --secondary-color: #ffb7b2;
+            --bg-color: #fff0f5;
+            --text-main: #4a4a4a;
+            --text-light: #888;
+            --white: #ffffff;
+            --card-shadow: 0 4px 12px rgba(255, 140, 105, 0.15);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            font-size: 1rem;
+            color: var(--text-main);
+            transition: var(--transition);
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: var(--primary-color);
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box input {
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid #eee;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .search-box input:focus {
+            border-color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fff0f5 0%, #ffe4e1 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: var(--transition);
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(255, 140, 105, 0.4);
+        }
+
+        .btn-primary:hover {
+            background-color: #ff7b5f;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 3px;
+            background: var(--primary-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Topic Sections */
+        .topic-section {
+            margin-bottom: 60px;
+        }
+
+        .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .topic-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .topic-card:hover {
+            box-shadow: 0 8px 20px rgba(255, 140, 105, 0.25);
+        }
+
+        .topic-img {
+            width: 100%;
+            height: 180px;
+            background-color: #f0f0f0;
+            object-fit: cover;
+        }
+
+        .topic-content {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .topic-tag {
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            background: rgba(255, 140, 105, 0.1);
+            padding: 4px 8px;
+            border-radius: 4px;
+            align-self: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .topic-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .topic-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        .topic-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #999;
+            border-top: 1px solid #f5f5f5;
+            padding-top: 15px;
+        }
+
+        /* Community Rules */
+        .rules-section {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .rules-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .rules-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #fff;
+            border-top: 1px solid #eee;
+            padding: 50px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+                春暖花开性吧由你
+                <span>社区</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#" class="active">首页</a>
+                <a href="#">情感话题</a>
+                <a href="#">两性关系</a>
+                <a href="#">私密分享</a>
+                <a href="#">社区规则</a>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索话题...">
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>探索情感与两性的温暖空间</h1>
+            <p>在这里，我们分享真实的情感经历，探讨两性相处的智慧，构建一个安全、尊重且充满理解的交流社区。</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">加入我们</a>
+                <a href="#" class="btn btn-outline">浏览话题</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- Features -->
+        <section class="feature-grid">
+            <article class="feature-card">
+                <span class="feature-icon">💬</span>
+                <h3>自由交流</h3>
+                <p>打破传统束缚，在安全匿名的环境下畅所欲言，分享生活中的喜怒哀乐。</p>
+            </article>
+            <article class="feature-card">
+                <span class="feature-icon">🤝</span>
+                <h3>互助成长</h3>
+                <p>遇到情感困惑？在这里找到志同道合的朋友，互相支持，共同成长。</p>
+            </article>
+            <article class="feature-card">
+                <span class="feature-icon">🛡️</span>
+                <h3>隐私保护</h3>
+                <p>重视每一位用户的数据安全与隐私，提供完善的隐私保护机制。</p>
+            </article>
+            <article class="feature-card">
+                <span class="feature-icon">🌈</span>
+                <h3>多元包容</h3>
+                <p>尊重不同的生活方式与观点，欢迎每一位真诚的你加入。</p>
+            </article>
+        </section>
+
+        <!-- Topics Section -->
+        <section class="topic-section">
+            <div class="section-title">
+                <h2>热门话题</h2>
+                <p>关注当下大家最关心的情感与两性话题</p>
+            </div>
+            <div class="topic-grid">
+                <article class="topic-card">
+                    <img src="https://picsum.photos/seed/love1/400/250" alt="两性相处" class="topic-img">
+                    <div class="topic-content">
+                        <span class="topic-tag">情感咨询</span>
+                        <h3 class="topic-title">如何建立健康的两性边界感？</h3>
+                        <p class="topic-desc">边界感是亲密关系中最重要的基石，本文探讨如何在保持亲密的同时尊重彼此的个人空间。</p>
+                        <div class="topic-footer">
+                            <span>2023-10-24</span>
+                            <span>1.2k 阅读</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="topic-card">
+                    <img src="https://picsum.photos/seed/love2/400/250" alt="亲密关系" class="topic-img">
+                    <div class="topic-content">
+                        <span class="topic-tag">私密分享</span>
+                        <h3 class="topic-title">那些年我们经历过的第一次</h3>
+                        <p class="topic-desc">从青涩到成熟，每一次的尝试都是成长的印记。分享你的经历，也许能给他人带来启发。</p>
+                        <div class="topic-footer">
+                            <span>2023-10-23</span>
+                            <span>856 阅读</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="topic-card">
+                    <img src="https://picsum.photos/seed/love3/400/250" alt="情感修复" class="topic-img">
+                    <div class="topic-content">
+                        <span class="topic-tag">关系修复</span>
+                        <h3 class="topic-title">争吵后如何有效沟通？</h3>
+                        <p class="topic-desc">争吵并不可怕，可怕的是争吵后的冷战。掌握正确的沟通技巧，让感情升温。</p>
+                        <div class="topic-footer">
+                            <span>2023-10-22</span>
+                            <span>2.1k 阅读</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Community Guidelines -->
+        <section class="rules-section">
+            <div class="section-title">
+                <h2>社区公约</h2>
+            </div>
+            <ul class="rules-list">
+                <li>请保持文明礼貌，严禁使用侮辱性、攻击性语言。</li>
+                <li>尊重他人隐私，不传播未经证实的个人隐私信息。</li>
+                <li>严禁发布违法违规、色情低俗或诱导性内容。</li>
+                <li>鼓励理性讨论，反对人身攻击和地域歧视。</li>
+                <li>共同维护清朗的网络空间，营造温暖的社区氛围。</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>关于我们</h4>
+                <p style="color: #999; font-size: 0.9rem;">春暖花开性吧由你致力于提供一个开放、包容、安全的情感交流平台，帮助用户更好地理解自我与他人。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#">发布话题</a></li>
+                    <li><a href="#">热门榜单</a></li>
+                    <li><a href="#">新手指南</a></li>
+                    <li><a href="#">联系管理</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>相关链接</h4>
+                <ul>
+                    <li><a href="#">心理健康</a></li>
+                    <li><a href="#">情感教育</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                    <li><a href="#">用户协议</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 春暖花开性吧由你. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
