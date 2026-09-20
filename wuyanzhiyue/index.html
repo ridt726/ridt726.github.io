@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="无颜之月全集 - 深度解析经典日式成人向漫画作品的艺术风格、剧情脉络与角色设定，提供正版正版阅读渠道与安全浏览指南。">
+    <meta name="keywords" content="无颜之月全集, 漫画, 日式漫画, 恋爱, 成人漫画, 阅读指南">
+    <title>无颜之月全集 - 经典日式漫画深度解析与正版阅读指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-radius: 8px;
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        nav a.active {
+            color: var(--accent-color);
+        }
+
+        .search-bar {
+            display: flex;
+            background: #eee;
+            border-radius: 20px;
+            padding: 0.3rem 1rem;
+            width: 200px;
+        }
+
+        .search-bar input {
+            border: none;
+            background: transparent;
+            outline: none;
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), #34495e);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 2rem;
+        }
+
+        /* Main Content */
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img-placeholder {
+            width: 100%;
+            height: 280px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .card-content {
+            padding: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-meta {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tag {
+            background-color: #eee;
+            padding: 0.1rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+
+        /* Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .sidebar-widget {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .sidebar-widget h3 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .info-label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.2rem;
+        }
+
+        .info-value {
+            font-weight: 500;
+        }
+
+        /* Guide Section */
+        .guide-section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin-top: 2rem;
+        }
+
+        .guide-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .guide-item h4 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .guide-item p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-col a {
+            color: #bdc3c7;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-container {
+                padding: 0 1rem;
+            }
+
+            nav {
+                display: none; /* Simplified for mobile */
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .guide-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span>◆</span> 漫阅空间
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">日式漫画</a></li>
+                    <li><a href="#">热门榜单</a></li>
+                    <li><a href="#">阅读指南</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="搜索作品...">
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>无颜之月全集</h1>
+        <p>探索经典日式成人向漫画作品的独特艺术风格与剧情深度，了解正版阅读渠道与安全浏览规范。</p>
+        <a href="#reading-guide" class="btn">开始阅读</a>
+    </section>
+
+    <div class="container">
+        <!-- Main Content Area -->
+        <main>
+            <section>
+                <div class="section-title">
+                    <span>作品概览与分类</span>
+                    <a href="#" style="font-size: 0.9rem; color: var(--accent-color);">查看全部 &rarr;</a>
+                </div>
+                <div class="card-grid">
+                    <!-- Card 1 -->
+                    <article class="card">
+                        <div class="card-img-placeholder">
+                            <img src="https://picsum.photos/seed/manga1/300/400" alt="无颜之月封面示意" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">无颜之月：完整版</h3>
+                            <div class="card-meta">
+                                <span class="tag">日式漫画</span>
+                                <span>全卷完结</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Card 2 -->
+                    <article class="card">
+                        <div class="card-img-placeholder">
+                            <img src="https://picsum.photos/seed/manga2/300/400" alt="角色角色示意" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">月之家族：番外篇</h3>
+                            <div class="card-meta">
+                                <span class="tag">番外</span>
+                                <span>已完结</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="card">
+                        <div class="card-img-placeholder">
+                            <img src="https://picsum.photos/seed/manga3/300/400" alt="背景设定示意" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">月之家族：官方设定集</h3>
+                            <div class="card-meta">
+                                <span class="tag">设定</span>
+                                <span>图文解说</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="card">
+                        <div class="card-img-placeholder">
+                            <img src="https://picsum.photos/seed/manga4/300/400" alt="作者访谈示意" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">创作者访谈：创作心路</h3>
+                            <div class="card-meta">
+                                <span class="tag">资讯</span>
+                                <span>深度报道</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="guide-section" id="reading-guide">
+                <div class="section-title">
+                    <span>正版阅读与安全指南</span>
+                </div>
+                <div class="guide-grid">
+                    <div class="guide-item">
+                        <h4>如何找到正版全集资源</h4>
+                        <p>支持创作者请通过正规漫画平台或实体书购买。正版平台通常提供高清画质、无广告干扰以及官方翻译服务，能获得最佳阅读体验。</p>
+                    </div>
+                    <div class="guide-item">
+                        <h4>阅读时的注意事项</h4>
+                        <p>建议在安静、舒适的环境下阅读。部分作品包含成人向内容，请确保您已达到法定成年年龄，并注意保护个人隐私，避免在公共网络环境下浏览敏感内容。</p>
+                    </div>
+                    <div class="guide-item">
+                        <h4>作品风格解析</h4>
+                        <p>该作品以细腻的线条和独特的视角著称，擅长通过光影变化来营造氛围。阅读时建议关注其叙事节奏与人物心理的刻画。</p>
+                    </div>
+                    <div class="guide-item">
+                        <h4>常见问题 (FAQ)</h4>
+                        <p>Q: 作品在哪里可以看？ A: 请关注各大正规漫画平台的官方公告。Q: 是否有动画化？ A: 截至目前，官方尚未公布动画化计划。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-title">
+                    <span>近期热门推荐</span>
+                </div>
+                <div class="card-grid">
+                    <article class="card">
+                        <div class="card-img-placeholder">
+                            <img src="https://picsum.photos/seed/manga5/300/400" alt="推荐作品1" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">黑暗中的微光</h3>
+                            <div class="card-meta">
+                                <span class="tag">悬疑</span>
+                                <span>连载中</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-img-placeholder">
+                            <img src="https://picsum.photos/seed/manga6/300/400" alt="推荐作品2" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">纯白之恋</h3>
+                            <div class="card-meta">
+                                <span class="tag">恋爱</span>
+                                <span>已完结</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-img-placeholder">
+                            <img src="https://picsum.photos/seed/manga7/300/400" alt="推荐作品3" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">都市传说集</h3>
+                            <div class="card-meta">
+                                <span class="tag">奇幻</span>
+                                <span>精选集</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside>
+            <div class="sidebar-widget">
+                <h3>作品信息</h3>
+                <ul class="info-list">
+                    <li>
+                        <span class="info-label">作者</span>
+                        <span class="info-value">Yokohama Zekkei</span>
+                    </li>
+                    <li>
+                        <span class="info-label">状态</span>
+                        <span class="info-value">全卷完结</span>
+                    </li>
+                    <li>
+                        <span class="info-label">类型</span>
+                        <span class="info-value">日式漫画 / 恋爱</span>
+                    </li>
+                    <li>
+                        <span class="info-label">发布平台</span>
+                        <span class="info-value">实体书 / 数字平台</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>浏览排行</h3>
+                <ul class="info-list">
+                    <li>
+                        <a href="#">无颜之月：第1话</a>
+                    </li>
+                    <li>
+                        <a href="#">无颜之月：第2话</a>
+                    </li>
+                    <li>
+                        <a href="#">无颜之月：第3话</a>
+                    </li>
+                    <li>
+                        <a href="#">无颜之月：第4话</a>
+                    </li>
+                    <li>
+                        <a href="#">无颜之月：第5话</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>友情链接</h3>
+                <ul class="info-list">
+                    <li><a href="#">漫画之家</a></li>
+                    <li><a href="#">动漫之家</a></li>
+                    <li><a href="#">正版漫画平台</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>漫阅空间</h4>
+                <p style="color: #bdc3c7; font-size: 0.9rem;">致力于为漫画爱好者提供最优质的阅读资讯与正版资源指引。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#">作品分类</a></li>
+                    <li><a href="#">最新更新</a></li>
+                    <li><a href="#">排行榜单</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>联系我们</h4>
+                <ul>
+                    <li><a href="#">意见反馈</a></li>
+                    <li><a href="#">版权声明</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 漫阅空间. All Rights Reserved. 本站内容仅供资讯展示，请支持正版阅读。
+        </div>
+    </footer>
+
+</body>
+</html>
